@@ -1,0 +1,102 @@
+<style>
+  table.greyGridTable {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    border: 2px solid #FFFFFF;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+
+  table.greyGridTable td,
+  table.greyGridTable th {
+    border: 1px solid #FFFFFF;
+    padding: 3px 3px;
+  }
+
+  table.greyGridTable tbody td {
+    font-size: 14px;
+  }
+
+  table.greyGridTable tr:nth-child(even) {
+    background: #F2F2F2;
+  }
+
+  table.greyGridTable thead {
+    background: #FFFFFF;
+    border-bottom: 2px solid #333333;
+  }
+
+  table.greyGridTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+  }
+
+  table.greyGridTable tfoot td {
+    font-size: 14px;
+  }
+</style>
+<table class="greyGridTable">
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Method</th>
+      <th>Cora</th>
+      <th>Citeseer</th>
+      <th>Pubmed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>NSGCN</td>
+      <td><strong>84.0 &plusmn; 0.5</strong></td>
+      <td>72.7 &plusmn; 0.4</td>
+      <td><strong>79.2 &plusmn; 0.3</strong></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>DR-GAT</td>
+      <td>83.6 &plusmn; 0.5</td>
+      <td><strong>72.8 &plusmn; 0.8</strong></td>
+      <td>79.1 &plusmn; 0.3</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>DR-GCN</td>
+      <td>81.6 &plusmn; 0.1</td>
+      <td>71.0 &plusmn; 0.6</td>
+      <td>79.2 &plusmn; 0.4</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>GAT</td>
+      <td>83.0 &plusmn; 0.7</td>
+      <td>72.5 &plusmn; 0.7</td>
+      <td>79.0 &plusmn; 0.3</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>GCN</td>
+      <td>81.4 &plusmn; 0.5</td>
+      <td>70.9 &plusmn; 0.5</td>
+      <td>79.0 &plusmn; 0.3</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>FastGCN</td>
+      <td>81.4&nbsp;&plusmn; 0.5</td>
+      <td>68.8&nbsp;&plusmn; 0.9</td>
+      <td>77.6&nbsp;&plusmn; 0.5</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>GraphSAGE</td>
+      <td>78.9&plusmn; 0.8</td>
+      <td>67.4&plusmn; 0.7</td>
+      <td>77.8&plusmn; 0.6</td>
+    </tr>
+  </tbody>
+</table>
