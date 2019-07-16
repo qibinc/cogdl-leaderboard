@@ -1,111 +1,134 @@
 <style>
-    table.greyGridTable {
-      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-      border: 2px solid #FFFFFF;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      border-collapse: collapse;
-    }
-  
-    table.greyGridTable td,
-    table.greyGridTable th {
-      border: 1px solid #FFFFFF;
-      padding: 3px 3px;
-    }
-  
-    table.greyGridTable tbody td {
-      font-size: 14px;
-    }
-  
-    table.greyGridTable tr:nth-child(even) {
-      background: #F2F2F2;
-    }
-  
-    table.greyGridTable thead {
-      background: #FFFFFF;
-      border-bottom: 2px solid #333333;
-    }
-  
-    table.greyGridTable thead th {
-      font-size: 15px;
-      font-weight: bold;
-      color: #333333;
-      text-align: center;
-    }
-  
-    table.greyGridTable tfoot td {
-      font-size: 14px;
-    }
-  </style>
-  <table class="greyGridTable">
-    <thead>
-        <tr class="header">
-        <th>Rank</th>
-        <th style="text-align: center;">Algorithm</th>
-        <th style="text-align: right;">PPI</th>
-        <th style="text-align: right;">Blogcatalog</th>
-        <th style="text-align: right;">Wikipedia</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>1</td>
-        <td style="text-align: center;"> ProNE<br/> <a href="http://arxiv.org/abs/1806.02623">(Zhang et al, IJCAI'19)</a></td>
-        <td style="text-align: right;"><strong>26.32</strong></td>
-        <td style="text-align: right;"><strong>43.63</strong></td>
-        <td style="text-align: right;">57.64</td>
+  A:link {
+    COLOR: #212121;
+  }
 
-        </tr>
-        <tr class="even">
-        <td>2</td>
-        <td style="text-align: center;"> NetMF<br/> <a href="http://arxiv.org/abs/1710.02971">(Qiu et al, WSDM'18)</a></td>
-        <td style="text-align: right;">24.86</td>
-        <td style="text-align: right;">43.49</td>
-        <td style="text-align: right;"><strong>58.46</strong></td>
-        </tr>
-        <tr class="odd">
-        <td>3</td>
-        <td style="text-align: center;"> Node2vec<br/>  <a href="http://dl.acm.org/citation.cfm?doid=2939672.2939754">(Grover et al, KDD'16)</a></td>
-        <td style="text-align: right;">23.86</td>
-        <td style="text-align: right;">42.51</td>
-        <td style="text-align: right;">53.68</td>
-        </tr>
-        <tr class="even">
-        <td>4</td>
-        <td style="text-align: center;"> NetSMF<br/>  <a href="http://arxiv.org/abs/1710.02971">(Qiu et at, WWW'19)</a></td>
-        <td style="text-align: right;">24.39</td>
-        <td style="text-align: right;">43.21</td>
-        <td style="text-align: right;">51.42</td>
-        </tr>
-        <tr class="odd">
-        <td>5</td>
-        <td style="text-align: center;"> DeepWalk<br/>  <a href="http://arxiv.org/abs/1403.6652">(Perozzi et al, KDD'14)</a></td>
-        <td style="text-align: right;">22.72</td>
-        <td style="text-align: right;">42.26</td>
-        <td style="text-align: right;">50.42</td>
-        </tr>
-        <tr class="even">
-        <td>6</td>
-        <td style="text-align: center;"> LINE<br/>  <a href="http://arxiv.org/abs/1503.03578">(Tang et al, WWW'15)</a></td>
-        <td style="text-align: right;">23.15</td>
-        <td style="text-align: right;">39.29</td>
-        <td style="text-align: right;">49.83</td>
-        </tr>
-        <tr class="odd">
-        <td>7</td>
-        <td style="text-align: center;"> Hope<br/>  <a href="http://dl.acm.org/citation.cfm?doid=2939672.2939751">(Ou et al, KDD'16)</a></td>
-        <td style="text-align: right;">23.24</td>
-        <td style="text-align: right;">35.52</td>
-        <td style="text-align: right;">52.96</td>
-        </tr>
-        <tr class="even">
-        <td>8</td>
-        <td style="text-align: center;"> GraRep<br/>  <a href="http://dl.acm.org/citation.cfm?doid=2806416.2806512">(Cao et al, CIKM'15):</a></td>
-        <td style="text-align: right;">20.96</td>
-        <td style="text-align: right;">34.35</td>
-        <td style="text-align: right;">51.84</td>
-        </tr>
-        </tbody>
-        </table>
-        
+  A:visited {
+    COLOR: #212121;
+  }
+
+  A:active {
+    COLOR: #212121;
+  }
+
+  A:hover {
+    COLOR: #646464;
+  }
+
+  table.greyGridTable {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    border: 2px solid #FFFFFF;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+
+  table.greyGridTable td,
+  table.greyGridTable th {
+    border: 1px solid #FFFFFF;
+    padding: 3px 3px;
+  }
+
+  table.greyGridTable tbody td {
+    font-size: 14px;
+  }
+
+  table.greyGridTable tr:nth-child(even) {
+    background: #F2F2F2;
+  }
+
+  table.greyGridTable thead {
+    background: #FFFFFF;
+    border-bottom: 2px solid #333333;
+  }
+
+  table.greyGridTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+  }
+
+  table.greyGridTable tfoot td {
+    font-size: 14px;
+  }
+</style>
+<table class="greyGridTable">
+  <thead>
+    <tr class="header">
+      <th>Rank</th>
+      <th >Algorithm</th>
+      <th >PPI</th>
+      <th >Blogcatalog</th>
+      <th >Wikipedia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>1</td>
+      <td > ProNE<br /> <a href="http://arxiv.org/abs/1806.02623">(Zhang et al, IJCAI'19)</a>
+      </td>
+      <td ><strong>26.32</strong></td>
+      <td ><strong>43.63</strong></td>
+      <td >57.64</td>
+
+    </tr>
+    <tr class="even">
+      <td>2</td>
+      <td > NetMF<br /> <a href="http://arxiv.org/abs/1710.02971">(Qiu et al, WSDM'18)</a>
+      </td>
+      <td >24.86</td>
+      <td >43.49</td>
+      <td ><strong>58.46</strong></td>
+    </tr>
+    <tr class="odd">
+      <td>3</td>
+      <td > Node2vec<br /> <a
+          href="http://dl.acm.org/citation.cfm?doid=2939672.2939754">(Grover et al, KDD'16)</a></td>
+      <td >23.86</td>
+      <td >42.51</td>
+      <td >53.68</td>
+    </tr>
+    <tr class="even">
+      <td>4</td>
+      <td > NetSMF<br /> <a href="http://arxiv.org/abs/1710.02971">(Qiu et at, WWW'19)</a>
+      </td>
+      <td >24.39</td>
+      <td >43.21</td>
+      <td >51.42</td>
+    </tr>
+    <tr class="odd">
+      <td>5</td>
+      <td > DeepWalk<br /> <a href="http://arxiv.org/abs/1403.6652">(Perozzi et al,
+          KDD'14)</a></td>
+      <td >22.72</td>
+      <td >42.26</td>
+      <td >50.42</td>
+    </tr>
+    <tr class="even">
+      <td>6</td>
+      <td > LINE<br /> <a href="http://arxiv.org/abs/1503.03578">(Tang et al, WWW'15)</a>
+      </td>
+      <td >23.15</td>
+      <td >39.29</td>
+      <td >49.83</td>
+    </tr>
+    <tr class="odd">
+      <td>7</td>
+      <td > Hope<br /> <a href="http://dl.acm.org/citation.cfm?doid=2939672.2939751">(Ou et
+          al, KDD'16)</a></td>
+      <td >23.24</td>
+      <td >35.52</td>
+      <td >52.96</td>
+    </tr>
+    <tr class="even">
+      <td>8</td>
+      <td > GraRep<br /> <a href="http://dl.acm.org/citation.cfm?doid=2806416.2806512">(Cao
+          et al, CIKM'15):</a></td>
+      <td >20.96</td>
+      <td >34.35</td>
+      <td >51.84</td>
+    </tr>
+  </tbody>
+</table>
