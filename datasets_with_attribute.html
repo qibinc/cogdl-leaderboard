@@ -1,0 +1,117 @@
+<style>
+  A:link {
+    COLOR: #212121;
+  }
+  A:visited {
+    COLOR: #212121;
+  }
+  A:active {
+    COLOR: #212121;
+  }
+  A:hover {
+    COLOR: #646464;
+  }
+  table.greyGridTable {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    border: 2px solid #FFFFFF;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  table.greyGridTable td,
+  table.greyGridTable th {
+    border: 1px solid #FFFFFF;
+    padding: 3px 3px;
+  }
+  table.greyGridTable tbody td {
+    font-size: 14px;
+  }
+  table.greyGridTable tr:nth-child(even) {
+    background: #F2F2F2;
+  }
+  table.greyGridTable thead {
+    background: #FFFFFF;
+    border-bottom: 2px solid #333333;
+  }
+  table.greyGridTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+  }
+  table.greyGridTable tfoot td {
+    font-size: 14px;
+  }
+</style>
+
+
+ <table class="greyGridTable">
+  <thead>
+  <tr class="header">
+    <th>Dataset</th>
+    <th>Cora</th>
+    <th>Citeseer</th>
+    <th>Pubmed</th>
+    <th>PPI</th>
+  </tr>
+   </thead>
+     <tbody>
+  <tr>
+    <td>Task</td>
+    <td>Transductive</td>
+    <td>Transductive</td>
+    <td>Transductive</td>
+    <td>Inductive</td>
+  </tr>
+  <tr>
+    <td>#Nodes</td>
+    <td>2,708</td>
+    <td>3,327</td>
+    <td>19,717</td>
+    <td>56,944(24 graphs)</td>
+  </tr>
+  <tr>
+    <td>#Edges</td>
+    <td>5,429</td>
+    <td>4,732</td>
+    <td>44,338</td>
+    <td>818,736</td>
+  </tr>
+  <tr>
+    <td>#Features</td>
+    <td>1,433</td>
+    <td>3,703</td>
+    <td>500</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>#Classes</td>
+    <td>7</td>
+    <td>6</td>
+    <td>3</td>
+    <td>121(multilabel)</td>
+  </tr>
+  <tr>
+    <td>#Training Nodes</td>
+    <td>140</td>
+    <td>120</td>
+    <td>60</td>
+    <td>44,906(20 graphs)</td>
+  </tr>
+  <tr>
+    <td>#Validation Nodes</td>
+    <td>500</td>
+    <td>500</td>
+    <td>500</td>
+    <td>6,514(2 graphs)</td>
+  </tr>
+  <tr>
+    <td>#Test Nodes</td>
+    <td>1,000</td>
+    <td>1,000</td>
+    <td>1,000</td>
+    <td>5,524(2 graphs)</td>
+  </tr>
+    </tbody>
+</table>
