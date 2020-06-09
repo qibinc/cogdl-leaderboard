@@ -1,0 +1,98 @@
+<style>
+    A:link {
+      COLOR: #212121;
+    }
+    A:visited {
+      COLOR: #212121;
+    }
+    A:active {
+      COLOR: #212121;
+    }
+    A:hover {
+      COLOR: #646464;
+    }
+    table.greyGridTable {
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      border: 2px solid #FFFFFF;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      border-collapse: collapse;
+    }
+    table.greyGridTable td,
+    table.greyGridTable th {
+      border: 1px solid #FFFFFF;
+      padding: 3px 3px;
+    }
+    table.greyGridTable tbody td {
+      font-size: 14px;
+    }
+    table.greyGridTable tr:nth-child(even) {
+      background: #F2F2F2;
+    }
+    table.greyGridTable thead {
+      background: #FFFFFF;
+      border-bottom: 2px solid #333333;
+    }
+    table.greyGridTable thead th {
+      font-size: 15px;
+      font-weight: bold;
+      color: #333333;
+      text-align: center;
+    }
+    table.greyGridTable tfoot td {
+      font-size: 14px;
+    }
+  </style>
+  
+  
+   <table class="greyGridTable">
+    <thead>
+  
+    <tr class="header">
+      <th>Dataset</th>
+      <th>#Nodes</th>
+      <th>#Edges</th>
+      <th>#Edges type</th>
+      <th>#Features</th>
+      <th>#Training</th>
+      <th>#Validation</th>
+      <th>#Test</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DBLP-GTN</td>
+      <td>18,405</td>
+      <td>67,946</td>
+      <td>4</td>
+      <td>334</td>
+      <td>800</td>
+      <td>400</td>
+      <td>2,857</td>
+    </tr>
+    <tr>
+      <td>ACM</td>
+      <td>8,994</td>
+      <td>25,922</td>
+      <td>4</td>
+      <td>1,902</td>
+      <td>600</td>
+      <td>300</td>
+      <td>2,125</td>
+
+    </tr>
+    <tr>
+      <td>IMDB</td>
+      <td>12,772</td>
+      <td>37,288</td>
+      <td>4</td>
+      <td>1,256</td>
+      <td>300</td>
+      <td>300</td>
+      <td>2,339</td>
+
+    </tr>
+    </tbody>
+  </table>
