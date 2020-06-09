@@ -1,0 +1,94 @@
+<style>
+    A:link {
+      COLOR: #212121;
+    }
+  
+    A:visited {
+      COLOR: #212121;
+    }
+  
+    A:active {
+      COLOR: #212121;
+    }
+  
+    A:hover {
+      COLOR: #646464;
+    }
+  
+    table.greyGridTable {
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      border: 2px solid #FFFFFF;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      border-collapse: collapse;
+    }
+  
+    table.greyGridTable td,
+    table.greyGridTable th {
+      border: 1px solid #FFFFFF;
+      padding: 3px 3px;
+    }
+  
+    table.greyGridTable tbody td {
+      font-size: 14px;
+    }
+  
+    table.greyGridTable tr:nth-child(even) {
+      background: #F2F2F2;
+    }
+  
+    table.greyGridTable thead {
+      background: #FFFFFF;
+      border-bottom: 2px solid #333333;
+    }
+  
+    table.greyGridTable thead th {
+      font-size: 15px;
+      font-weight: bold;
+      color: #333333;
+      text-align: center;
+    }
+  
+    table.greyGridTable tfoot td {
+      font-size: 14px;
+    }
+  </style>
+  <table class="greyGridTable">
+    <thead>
+      <tr class="header">
+        <th>Rank</th>
+        <th >Algorithm</th>
+        <th >DBLP</th>
+        <th >ACM</th>
+        <th >IMDB</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd">
+        <td>1</td>
+        <td > PTE<br /> <a href="https://arxiv.org/abs/1508.00200">(Tang et al, KDD'15)</a>
+        </td>
+        <td ><strong>78.65</strong></td>
+        <td >87.44</td>
+        <td ><strong>48.91</strong></td>
+  
+      </tr>
+      <tr class="even">
+        <td>2</td>
+        <td > Metapath2vec<br /> <a href="https://ericdongyx.github.io/papers/KDD17-dong-chawla-swami-metapath2vec.pdf">(Dong et al, KDD'17)</a>
+        </td>
+        <td >75.18</td>
+        <td ><strong>88.79 </strong></td>
+        <td >43.10</td>
+      </tr>
+      <tr class="odd">
+        <td>3</td>
+        <td > Hin2vec<br /> <a
+            href="https://dl.acm.org/doi/10.1145/3132847.3132953">(Fu et al, CIKM'17)</a></td>
+        <td >74.31</td>
+        <td >84.66</td>
+        <td >44.04 </td>
+      </tr>
+    </tbody>
+  </table>
